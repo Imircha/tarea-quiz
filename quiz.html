@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo</title>
+    <meta name="description" content="Una aplicación de Quiz Interactivo para evaluar tus conocimientos.">
+    <meta name="author" content="Tu Nombre">
+    <link rel="stylesheet" href="assets/css/Styles.css">
+</head>
+<body>
+    <div id="inicio-pantalla" class="pantalla">
+        <h1>Bienvenido al Quiz Interactivo</h1>
+        <p>Selecciona una categoría para comenzar:</p>
+        <div id="categoria-selector">
+            <button class="categoria-btn" data-categoria="HTML">HTML</button>
+            <button class="categoria-btn" data-categoria="CSS">CSS</button>
+            <button class="categoria-btn" data-categoria="JavaScript">JavaScript</button>
+        </div>
+    </div>
+
+    <div id="preguntas-pantalla" class="pantalla ocultar">
+        <div id="barra-progreso-container">
+            <div id="barra-progreso"></div>
+        </div>
+        <p id="pregunta-texto"></p>
+        <div id="opciones-container"></div>
+        <button id="siguiente-btn">Siguiente</button>
+    </div>
+
+    <div id="resultados-pantalla" class="pantalla ocultar">
+        <h2>Resultados del Quiz</h2>
+        <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span></p>
+        <p id="mensaje-final"></p>
+        <div id="feedback-incorrecto"></div>
+        <button id="reiniciar-btn">Reiniciar Quiz</button>
+    </div>
+
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+</html>
